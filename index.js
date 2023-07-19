@@ -65,22 +65,22 @@
 // ”Trebuie sa citesti “Carte 2” de Autor 2”
 
 
-// // Definim șirul de obiecte care descriu cărțile
-// let carti = [
-//   { titlu: "Hobbitul", autor: "J.R.R. Tolkien", esteCitita: true },
-//   { titlu: "Cronicile din Narnia", autor: "C.S. Lewis", esteCitita: false },
-//   { titlu: "Mandrie și prejudecată", autor: "Jane Austen", esteCitita: true }
-// ];
-
-// // Iterăm prin fiecare carte și afișăm informațiile corespunzătoare
-// for (let i = 0; i < carti.length; i++) {
-//   let carte = carti[i];
-//   let { titlu, autor, esteCitita } = carte;
-//   console.log(titlu + " de " + autor);
-
-//   if (esteCitita) {
-//     console.log("Ai citit deja " + titlu + " de " + autor);
-//   } else {
-//     console.log("Trebuie să citești " + titlu + " de " + autor);
-//   }
-// }
+// Definim șirul de obiecte care descriu cărțile
+const carti = [
+    { titlu: "Hobbitul", autor: "J.R.R. Tolkien", esteCitita: true },
+    { titlu: "Cronicile din Narnia", autor: "C.S. Lewis", esteCitita: false },
+    { titlu: "Mandrie și prejudecată", autor: "Jane Austen", esteCitita: true }
+  ];
+  
+  // Iterăm prin fiecare carte și afișăm informațiile corespunzătoare
+  for (let i = 0; i < carti.length; i++) {
+    const carte = carti[i];
+    const { titlu, autor, esteCitita } = carte;
+    console.log(${titlu} de ${autor});
+  
+    if (esteCitita) {
+      console.log(Ai citit deja "${titlu}" de ${autor});
+    } else {
+      console.log(Trebuie să citești "${titlu}" de ${autor});
+    }
+  }
